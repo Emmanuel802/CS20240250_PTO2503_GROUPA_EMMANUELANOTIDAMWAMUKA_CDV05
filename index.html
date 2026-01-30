@@ -1,259 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emmanuel Mwamuka Portfolio</title>
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">&lt;Emmanuel/&gt;</div>
-      <div>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">&lt;Emmanuel/&gt;</div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">&lt;Emmanuel/&gt;</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+      </nav>
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          class="profile-pic"
-          src="./assets/profile-pic.png"
-          alt="Emmanuel Mwamuka profile picture"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Emmanuel Mwamuka</h1>
-        <p class="section__text__p2">Aspiring Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Emmanuel_Mwamuka_CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/emmanuel-anotida-275586263/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/Emmanuel802', '_blank')"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <p class="section__text__p1">Get To Know Me</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Learning and building projects <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>CodeSpace Academy<br />Ongoing Frontend Development</p>
-            </div>
+      <nav id="hamburger-nav">
+        <div class="logo">&lt;Emmanuel/&gt;</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="text-container">
-            <p>
-              I am passionate about learning web development and building
-              real-world projects. I enjoy improving my skills in HTML, CSS, and
-              JavaScript, and gradually moving into advanced frontend
-              frameworks. I am committed to continuous growth and creating
-              clean, functional, and visually appealing websites.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="HTML" class="icon" />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="CSS" class="icon" />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="JavaScript"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="SASS" class="icon" />
-                <div>
-                  <h3>React</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:emmanuelll.17@gmail.com">emmanuelll.17@gmail.com</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a
-              href="https://www.linkedin.com/in/emmanuel-anotida-275586263/"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
+          <ul class="menu-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -261,8 +36,246 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 Emmanuel Mwamuka. All Rights Reserved.</p>
+    </header>
+
+    <main>
+      <!-- PROFILE -->
+      <section id="profile">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.png"
+            alt="Emmanuel Mwamuka profile picture"
+            class="profile-pic"
+          />
+        </div>
+
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Emmanuel Mwamuka</h1>
+          <p class="section__text__p2">Aspiring Frontend Developer</p>
+
+          <div class="btn-container">
+            <a
+              href="./assets/Emmanuel_Mwamuka_CV.pdf"
+              class="btn btn-color-2"
+              target="_blank"
+              >Download CV</a
+            >
+            <a href="#contact" class="btn btn-color-1">Contact Info</a>
+          </div>
+
+          <div id="socials-container">
+            <a
+              href="https://www.linkedin.com/in/emmanuel-anotida-275586263/"
+              target="_blank"
+            >
+              <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+            </a>
+            <a href="https://github.com/Emmanuel802" target="_blank">
+              <img src="./assets/github.png" alt="GitHub" class="icon" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- ABOUT -->
+      <section id="about">
+        <p class="section__text__p1">Get To Know Me</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/about-pic.png"
+              alt="About Emmanuel"
+              class="about-pic"
+            />
+          </div>
+
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img src="./assets/experience.png" alt="" class="icon" />
+                <h3>Experience</h3>
+                <p>Learning & building projects<br />Frontend Development</p>
+              </div>
+
+              <div class="details-container">
+                <img src="./assets/education.png" alt="" class="icon" />
+                <h3>Education</h3>
+                <p>CodeSpace Academy<br />Frontend Development</p>
+              </div>
+            </div>
+
+            <p class="text-container">
+              I am passionate about learning web development and building
+              real-world projects. I enjoy improving my skills in HTML, CSS, and
+              JavaScript while moving toward modern frontend frameworks.
+            </p>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-details-container">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" class="icon" />
+                <div>
+                  <h3>React Vite</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="experience-details-container">
+          <div class="details-container color-container">
+            <img
+              src="./assets/Kanban-Board-preview.png"
+              alt="Kanban Board Project"
+              class="project-img"
+            />
+            <h2 class="experience-sub-title project-title">
+              Kanban Board Task Management
+            </h2>
+
+            <div class="btn-container">
+              <a
+                href="https://github.com/Emmanuel802/CS20240250_PTO2503_GROUPA_EMMANUELANOTIDAMWAMUKA_JSLPP.git"
+                class="btn btn-color-2"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://kanban-board-app-management.netlify.app/"
+                class="btn btn-color-2"
+                target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-details-container">
+          <div class="details-container color-container">
+            <img
+              src="./assets/Podcast-App-preview.png"
+              alt="Kanban Board Project"
+              class="project-img"
+            />
+            <h2 class="experience-sub-title project-title">PodCast App</h2>
+
+            <div class="btn-container">
+              <a
+                href="https://github.com/Emmanuel802/CS20240250_PTO2503_GROUPA_EMMANUELANOTIDAMWAMUKA_DJS04.git"
+                class="btn btn-color-2"
+                target="_blank"
+                >GitHub</a
+              >
+              <a href="" class="btn btn-color-2" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-details-container">
+          <div class="details-container color-container">
+            <img
+              src="./assets/Portfolio-preview.png"
+              alt="Kanban Board Project"
+              class="project-img"
+            />
+            <h2 class="experience-sub-title project-title">
+              Portfolio Website
+            </h2>
+
+            <div class="btn-container">
+              <a
+                href="https://github.com/Emmanuel802/CS20240250_PTO2502_GROUPA_EMMANUELANOTIDAMWAMUKA_SDF_Portfolio_Piece.git"
+                class="btn btn-color-2"
+                target="_blank"
+                >GitHub</a
+              >
+              <a href="" class="btn btn-color-2" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assets/email.png" class="icon email-icon" />
+            <a href="mailto:emmanuelll.17@gmail.com">emmanuelll.17@gmail.com</a>
+          </div>
+
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.png" class="icon" />
+            <a
+              href="https://www.linkedin.com/in/emmanuel-anotida-275586263/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+      <hr />
+    </main>
+
+    <footer>
+      <p>© 2025 Emmanuel Mwamuka. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
